@@ -31,7 +31,7 @@ class Product{
 						categories c
 							ON p.category_id = c.id
 				ORDER BY
-					p.created DESC";
+					p.id DESC";
 	 
 		// prepare query statement
 		$stmt = $this->conn->prepare($query);
